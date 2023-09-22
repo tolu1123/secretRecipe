@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    --red: rgb(160, 3, 3);
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    position: fixed;
+    z-index: 3;
+}
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 1rem 0 1rem 0.5rem;
+    font-family: 'Skranji', cursive;
+}
+/* Styling the jumbotron */
+div.jumbotron {
+    width: 100%;
+    height: 70vh;
+    background-image: url("images/jumbotron.jpg");
+    background-size: cover;
+    background-position: 0 -90px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* Styling the placeholder in the jumbotron */
+div.title {
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-family: 'Croissant One', cursive;
+}
+div.title > h2, div.title > h3 {
+    display: block;
+}
+div.title > h2{
+    font-size: 4.5rem;
+    line-height: 4.55rem;
+}
+div.title > h3 {
+    font-size: 4.15rem;
+    line-height: 4.2rem;
+}
+/* The body contents */
+div.container {
+    width: 100%;
+    padding: 20px 20px 0;
+    font-size: 1.4rem;
+}
+div.container > div {
+    width: 100%;
+}
+div.heading {
+    margin-bottom: 30px;
+}
+div h4 {
+    font-size: 2.5rem;
+}
+div.subcontainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+th {
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid #000;
+}
+div.subcontainer > div { 
+    width: 100%;
+    margin: 0 0 20px;
+}
+div.side > div {
+    width: 100%;
+    margin: 40px 0 20px;
+} 
+div.infomatics {
+    color: var(--red);
+}
+div.infomatics div {
+    margin: 15px 0 15px;
+}
+div.infomatics h6 {
+    font-size: 1.35rem;
+    line-height: 1.4rem;
+}
+div.infomatics p {
+    font-size: 1.75rem;
+}
+div.nutrition td:nth-child(2) {
+    font-weight: 700;
+}
+/* Styling the preparation guide */
+div.preparationGuide > h4 {
+    font-size: 2.8rem;
+}
+div.preparationGuide > ul {
+    width: 100%;
+    list-style-type: none;
+}
+div.preparationGuide > ul > li {
+    width: 100%;
+    margin: 30px 0 10px;
+}
+div.preparationGuide h6 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+}
+div.preparationGuide p {
+    font-size: 1.4rem;
+    margin: 10px 0; 
+}
+/* Styling the author section */
+div.author {
+    width: 100%;
+    padding: 30px 20px 20px;
+    background-color: #fbfbfb;
+    font-size: 1.4rem;
+}
+div.image {
+    background-image: url('images/author.jpg');
+    background-size: cover;
+    background-position: 30% 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+}
+div.description {
+    width: 100%;
+    margin: 10px 0 20px;
+}
+a {
+    color: var(--red);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* The footer  */
+footer {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > p {
+    margin: 20px 0;
+    color: #fff;
+    font-size: 1.8rem;
+}
+/* Media kueries goes here */
+@media (min-width: 768px) {
+    div.jumbotron {
+        height: 70vh;
+        background-position: 0 50%;
+    }
+    div.title {
+        line-height: 4.3rem;
+    }
+    div.title > h2, div.title > h3 {
+        display: inline-block;
+    }
+    div.title > h2{
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    div.title > h3 {
+        font-size: 4.85rem;
+        line-height: 4.85rem;
+    }
+
+    /* Designing the content area */
+    div.container {
+        padding: 20px 20px 0;
+    }
+    div.subcontainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+    div.subcontainer > div { 
+        margin: 0 0;
+    }
+    div.subcontainer > div.side{
+        width: calc(40% + 20px);
+        background-color: var(--red);
+        color: #fff;
+        margin: 0 -20px 0 0;
+        padding: 10px 20px 10px 10px;
+    }
+    div.infomatics {
+        color: #fff;
+    }
+    div.subcontainer > div.main {
+        width: 60%;
+    }
+    th, td {
+        border-bottom: 1px solid #fff;
+    }
+
+    div.preparationGuide {
+        margin:  0 15px 0 0;
+    }
+}
