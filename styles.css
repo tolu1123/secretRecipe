@@ -35,7 +35,7 @@ div.jumbotron {
 div.title {
     color: #fff;
     position: absolute;
-    bottom: 15px;
+    bottom: 50px;
     left: 15px;
     font-family: 'Croissant One', cursive;
 }
@@ -171,6 +171,12 @@ footer > p {
     div.jumbotron {
         height: 70vh;
         background-position: 0 50%;
+    }
+    div.title {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        font-family: 'Croissant One', cursive;
     }
     div.title {
         line-height: 4.3rem;
